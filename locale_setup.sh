@@ -11,7 +11,7 @@ sudo pacman-key --refresh-keys
 
 # Edit locale.gen
 # sudo nano /etc/locale.gen
-echo 'de.DE.UTF-8 UTF-8' >> /etc/locale.gen
+echo 'de_DE.UTF-8 UTF-8' >> /etc/locale.gen
 
 # fetch glibc with the needed locales
 sudo pacman -S glibc
@@ -26,10 +26,10 @@ sudo pacman -S ki18n
 sudo pacman -S plasma
 
 # install german spelling tools
-sudo pacman -S aspell-it
+sudo pacman -S aspell-de
 
 # reinstall all packages
 sudo pacman -Qqn | sudo pacman -S -
 
 # reboot system
-sudo shutdown -r now
+# sudo shutdown -r now
